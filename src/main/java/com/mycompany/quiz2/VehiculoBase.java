@@ -36,6 +36,18 @@ public abstract class VehiculoBase implements Vehiculo {
     public void setKilometraje(int kilometraje) {
         this.kilometraje = kilometraje;
     }
+     public void acelerar() {
+        kilometraje += 10; 
+        System.out.println("Acelerando. Velocidad actual: " + kilometraje + " km/h");
+    }
+
+    public void frenar() {
+        kilometraje -= 10; // Disminuye la velocidad en 10 unidades
+        if (kilometraje < 0) {
+            kilometraje = 0; // Evitar que la velocidad sea negativa
+        }
+        System.out.println("Frenando. Velocidad actual: " + kilometraje + " km/h");
+    }
 
     @Override
     public String toString() {

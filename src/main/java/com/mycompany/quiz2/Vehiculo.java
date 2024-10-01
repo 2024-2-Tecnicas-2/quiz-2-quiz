@@ -9,8 +9,8 @@ package com.mycompany.quiz2;
  * @author USUARIO
  */
 public interface Vehiculo {
-    public void Acelerar();
-    public void Frenar();
+    public void acelerar();
+    public void frenar();
     public void tipoCombustible();
     
     

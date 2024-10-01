@@ -10,17 +10,18 @@ package com.mycompany.quiz2;
  */
 public class Lancha extends VehiculoBase implements Vehiculo {
 
-    public Lancha(String marca, String modelo, int kilometraje) {
+    public tipoCombustible combustible;
+
+    public Lancha(com.mycompany.quiz2.tipoCombustible combustible, String marca, String modelo, int kilometraje) {
         super(marca, modelo, kilometraje);
+        this.combustible = combustible;
     }
 
     @Override
-    public void tipoCombustible() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public com.mycompany.quiz2.tipoCombustible tipoCombustible() {
+        return combustible;
     }
-
-   
-        
+    
     
 
 }

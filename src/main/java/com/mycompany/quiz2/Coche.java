@@ -9,26 +9,18 @@ package com.mycompany.quiz2;
  * @author USUARIO
  */
 public class Coche extends VehiculoBase implements Vehiculo{
+public tipoCombustible combustible;
 
-    public Coche(String marca, String modelo, int kilometraje) {
+    public Coche(com.mycompany.quiz2.tipoCombustible combustible, String marca, String modelo, int kilometraje) {
         super(marca, modelo, kilometraje);
+        this.combustible = combustible;
     }
 
-    @Override
-    public void Acelerar() {
-        System.out.println("Acelerando");
-        
-    }
+    
 
     @Override
-    public void Frenar() {
-        System.out.println("Frenando");
-      
-    }
-
-    @Override
-    public void tipoCombustible() {
-       
+    public com.mycompany.quiz2.tipoCombustible tipoCombustible() {
+        return combustible;
     }
 
  

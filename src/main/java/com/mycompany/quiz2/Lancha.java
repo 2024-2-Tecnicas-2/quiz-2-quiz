@@ -12,13 +12,13 @@ public class Lancha extends VehiculoBase implements Vehiculo {
 
     public tipoCombustible combustible;
 
-    public Lancha(com.mycompany.quiz2.tipoCombustible combustible, String marca, String modelo, int kilometraje) {
+    public Lancha(tipoCombustible combustible, String marca, String modelo, int kilometraje) {
         super(marca, modelo, kilometraje);
         this.combustible = combustible;
     }
 
     @Override
-    public com.mycompany.quiz2.tipoCombustible tipoCombustible() {
+    public tipoCombustible tipoCombustible() {
         return combustible;
     }
     

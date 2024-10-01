@@ -8,10 +8,10 @@ package com.mycompany.quiz2;
  *
  * @author USUARIO
  */
-public class Coche extends VehiculoBase implements Vehiculo{
+public class Coche extends VehiculoBase {
 public tipoCombustible combustible;
 
-    public Coche(com.mycompany.quiz2.tipoCombustible combustible, String marca, String modelo, int kilometraje) {
+    public Coche(tipoCombustible combustible, String marca, String modelo, int kilometraje) {
         super(marca, modelo, kilometraje);
         this.combustible = combustible;
     }
@@ -19,7 +19,7 @@ public tipoCombustible combustible;
     
 
     @Override
-    public com.mycompany.quiz2.tipoCombustible tipoCombustible() {
+    public tipoCombustible tipoCombustible() {
         return combustible;
     }
 

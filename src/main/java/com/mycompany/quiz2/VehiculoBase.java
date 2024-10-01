@@ -44,9 +44,9 @@ public abstract class VehiculoBase implements Vehiculo {
 
     @Override
     public void frenar() {
-        kilometraje -= 10; // Disminuye la velocidad en 10 unidades
+        kilometraje -= 10; 
         if (kilometraje < 0) {
-            kilometraje = 0; // Evitar que la velocidad sea negativa
+            kilometraje = 0; 
         }
         System.out.println("Frenando. Velocidad actual: " + kilometraje + " km/h");
     }

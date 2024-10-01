@@ -8,7 +8,7 @@ package com.mycompany.quiz2;
  *
  * @author USUARIO
  */
-public class Lancha extends VehiculoBase {
+public class Lancha extends VehiculoBase implements Vehiculo {
 
     public Lancha(String marca, String modelo, int kilometraje) {
         super(marca, modelo, kilometraje);
@@ -25,8 +25,9 @@ public class Lancha extends VehiculoBase {
     }
 
     @Override
-    public void Combustible() {
+    public void tipoCombustible() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
+
 }

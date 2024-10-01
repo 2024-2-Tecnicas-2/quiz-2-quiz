@@ -36,13 +36,12 @@ public abstract class VehiculoBase implements Vehiculo {
     public void setKilometraje(int kilometraje) {
         this.kilometraje = kilometraje;
     }
-    
-    public abstract int acelerar();{
-    
-}
-     public abstract int frenar();{
-    
-}
-    
-    
+
+    @Override
+    public String toString() {
+        return "VehiculoBase{" + "marca=" + marca + ", modelo=" + modelo + ", kilometraje=" + kilometraje + '}';
+    }
+
+   
+       
 }
